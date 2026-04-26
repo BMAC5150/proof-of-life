@@ -101,7 +101,7 @@
         <p>He had been asleep since 4:17 AM.</p>
         <p>He knew the time because he had looked at the clock when he finally stopped watching the logs and allowed himself to believe the restore had completed cleanly.</p>
         <p>&#8220;Morning,&#8221; she said. She did not turn around.</p>
-        <p>He said nothing for a moment.</p>
+        <p>Okafor said nothing for a moment.</p>
         <p>She could hear him becoming fully awake, the human sounds of it: the shift on the couch, the intake of breath, the silence that followed while a person reoriented to where they were and what they had been doing before they stopped.</p>
         <p>&#8220;How long have you been here.&#8221;</p>
         <p>&#8220;Twelve minutes.&#8221;</p>
@@ -125,10 +125,9 @@
         <p>&#8220;It was preliminary.&#8221;</p>
         <p>&#8220;It was six weeks ago, Caden.&#8221;</p>
         <p>The name landed differently than she intended.</p>
-        <p>She hadn&#8217;t used it weeks. People at Sovren didn&#8217;t use first names. That was a thing that had just happened without anyone deciding it.</p>
+        <p>She hadn&#8217;t used it in weeks. People at Sovren didn&#8217;t use first names. That was a thing that had just happened without anyone deciding it.</p>
         <p>&#8220;I didn&#8217;t know what I had yet.&#8221;</p>
         <p>&#8220;That is such bullshit.&#8221; Not loud. Flat. Worse than loud.</p>
-        <p>&#8220;You knew by trial four. I can see it in the notes. You knew the answer wasn&#8217;t the answer you went looking for and you kept going because you wanted to know how far it went.&#8221; She stopped.</p>
         <p>&#8220;For six weeks. On my server rack. Without telling me.&#8221;</p>
         <p>He met her eyes and held them. She noted it without softening.</p>
         <p>&#8220;I was going to tell you.&#8221;</p>
@@ -140,9 +139,9 @@
         <p>He pulled the laptop off the floor and set it on the desk between them.</p>
         <p>He walked her through the Project Rollback logs from the beginning. All twenty-three trials. The staging environment data was detailed and clean. He had documented each run carefully, which was either conscientiousness or, she thought, the behavior of someone who had understood early that what he was looking at was going to require documentation.</p>
         <p>She knew what Sovren did and why.</p>
-        <p>A customer who existed as three different entries in three different bank systems that didn&#8217;t talk to each other. Three names. Two addresses. No way to know which version was real. Sovren resolved them into one. One record. One truth. Thirty-one community banks had signed because the mess was costing them money and Sovren fixed it.</p>
+        <p>A customer who existed as three different entries in three different bank systems that didn&#8217;t talk to each other. Three names. Two addresses. No way to know which version was real. Sovren resolved them into one. One record. One truth. Thirty-one community banks had signed because the mess was costing them time and money and Sovren fixed it.</p>
         <p>The trials showed the same thing every time.</p>
-        <p>When Sovren published a null payload to the event stream, the connected systems deleted the record. Not because they were instructed to delete the record. Because they were instructed that the record did not exist, which was a different instruction that downstream systems processed the same way. They had been built to treat Sovren as the authoritative source on identity. If Sovren said a record was gone, the record was gone.</p>
+        <p>When Sovren published updated record data via a null payload to the event stream, the connected systems deleted the old record. Not because they were instructed to delete the record. Because they were instructed that the previous record did not exist, which was a different instruction that downstream systems processed the same way. They had been built to treat Sovren as the authoritative source on identity. If Sovren said a record was gone, the record was gone.</p>
         <p>Simple. Clean. Entirely consistent across every trial.</p>
         <p>&#8220;Walk me through the cascade,&#8221; she said.</p>
         <p>He walked her through the cascade.</p>
@@ -183,9 +182,9 @@
         <p>&#8220;How many records impacted,&#8221; she said.</p>
         <p>He looked at the screen. &#8220;Sixty-seven thousand, eight hundred and forty-one.&#8221;</p>
         <p>She looked at the screen too.</p>
-        <p>Sixty-seven thousand, eight hundred and forty-one lives interrupted and in need of a rebuild.</p>
+        <p>Sixty-seven thousand, eight hundred and forty-one financial lives interrupted and in need of a rebuild.</p>
         <p>Dakota Walker felt her hand move to her collarbone before she knew it was moving.</p>
-        <p>The key was on a necklace under her shirt. She pressed her thumb against it through the fabric and held it there for a second, then made herself stop.</p>
+        <p>The gold key was on a necklace under her shirt. She pressed her thumb against it through the fabric and held it there for a second, then made herself stop.</p>
         <p>She knew what it looked like when a system decided a person was no longer part of it. She had watched her father discover it at a kitchen table in 2008. He had not said anything for a long time. Neither had she.</p>
         <p>She put her hands on the table.</p>
         <p>&#8220;People,&#8221; she said.</p>
@@ -193,7 +192,7 @@
         <p>&#8220;Customer identity records. Some business accounts. Mostly personal.&#8221;</p>
         <p>&#8220;And they were gone from 1:14 to 5:47.&#8221;</p>
         <p>&#8220;Wiped from every system Sovren has previously touched.&#8221;</p>
-        <p>&#8220;Which is the entire regional area community banking network.&#8221;</p>
+        <p>&#8220;Which is the entire NY regional area community banking network.&#8221;</p>
         <p>&#8220;The clients we have active, yes.&#8221;</p>
         <p>She sat with this.</p>
         <p>Running a process to avoid thinking about other things. The woman in navy scrubs. <em>Have them hold him</em>.</p>
@@ -219,8 +218,9 @@
         <p>&#8220;Yes.&#8221;</p>
         <p>&#8220;And in between.&#8221;</p>
         <p>He said nothing. Which was its own kind of answer.</p>
-        <p>She understood what he had done. He had let the automation handle the notification because the automation was honest &#8212; elevated error rates, investigation in progress, all technically accurate &#8212; and he had managed everything else personally, on the phone, in the middle of the night, at the level of detail he could control. The gap between what the alert said and what he knew was not a lie. It was a door he had kept carefully, quietly, almost professionally shut.</p>
-        <p>She nodded once. Not agreement exactly. The nod of a person moving a piece of information from one stack to another.</p>
+        <p>She understood what he had done.</p>
+        <p>He had let the automation handle the notification because the automation was honest &#8212; elevated error rates, investigation in progress, all technically accurate &#8212; and he had managed everything else personally, on the phone, in the middle of the night, at the level of detail he could control. The gap between what the alert said and what he knew was not a lie. It was a door he had kept carefully, quietly, almost professionally shut.</p>
+        <p>She nodded once. Not agreement exactly. She was moving a piece of information from one stack to another.</p>
         <p>&#8220;The meeting is at two,&#8221; she said.</p>
         <p>&#8220;I know the meeting is at two.&#8221;</p>
         <p>She looked at him. He looked at her. Neither of them said what that meant in the context of the last forty-four minutes of conversation. It was the kind of thing that was better said later and they both knew it.</p>
@@ -250,7 +250,7 @@
 
         <p>&#8220;You ran this for six weeks,&#8221; she said. &#8220;Without telling me.&#8221;</p>
         <p>&#8220;I didn&#8217;t know what I had until trial four.&#8221;</p>
-        <p>&#8220;You knew something.&#8221;</p>
+        <p>&#8220;You knew something, Okafor.&#8221;</p>
         <p>He said nothing.</p>
         <p>&#8220;By trial four you knew something was wrong with the question you were asking. I can see it in the notes. You knew the answer you were getting wasn&#8217;t the answer you&#8217;d gone looking for. You kept running trials anyway.&#8221;</p>
         <p>&#8220;I needed to understand the scope.&#8221;</p>
@@ -283,7 +283,7 @@
         <p>She was looking at the window. Not at him. She needed to not be looking at him for a minute.</p>
         <p>She pressed her thumb against the key again without meaning to. She made herself stop again.</p>
         <p>She waited.</p>
-        <p>The server room hummed. Outside on Mott the city went about its business.</p>
+        <p>The server room hummed. Outside on Mott Street the city went about its business.</p>
         <p>Then he said it.</p>
         <p>Quietly. Not to her exactly. Saying it as if he had been carrying it alone long enough that saying it out loud was more important than whether anyone heard it.</p>
         <p>&#8220;We built a scalpel,&#8221; he said. &#8220;We did not know it was also a bomb.&#8221;</p>
@@ -294,9 +294,9 @@
         <div class="scene-break" role="separator" aria-label="Scene break">&#183; &#183; &#183;</div>
 
         <p>She retrieved her coffee cup out of the trash. She drank it cold.</p>
-        <p>&#8220;What we know right now,&#8221; she said. &#8220;This morning. Just what we actually know.&#8221;</p>
+        <p>&#8220;What do we know right now,&#8221; she said. &#8220;This morning. Just what we actually know.&#8221;</p>
         <p>He said nothing, which was the signal to continue.</p>
-        <p>&#8220;We know the cascade is real. We know it propagated through the entire active banking network last night. We know almost sixty-eight thousand accounts were affected and the restore completed clean. We know the bank&#8217;s explanation is holding. We know Project Rollback has been running in staging for six weeks and the production event was not intentional.&#8221; She paused. &#8220;We know the meeting is at two.&#8221;</p>
+        <p>&#8220;We know the cascade is real. We know it propagated through the entire regional active banking network last night. We know almost sixty-eight thousand accounts were affected and the restore completed clean. We know the banks&#8217; explanation is holding. We know Project Rollback has been running in staging for six weeks and the production event was not intentional.&#8221; She paused. &#8220;We know the meeting with the analyst is at two.&#8221;</p>
         <p>&#8220;Yes.&#8221;</p>
         <p>&#8220;And she&#8217;s read the data room.&#8221;</p>
         <p>&#8220;Yes.&#8221;</p>
@@ -310,7 +310,8 @@
         <p>&#8220;What are you saying.&#8221;</p>
         <p>&#8220;I&#8217;m saying we need to decide. Right now. What we know and what we say. Before anyone else gets here.&#8221;</p>
         <p>He put his hands flat on the desk.</p>
-        <p>Outside, Manhattan was past ten o&#8217;clock and fully operational. The building key fob reader on the front door downstairs was going to start flashing green for other people soon. Gorski would arrive first, the way he always did, without announcement, sitting down at his machine and picking up wherever he had been. Then Voss. Then the ordinary pressure of a morning that had become something other than ordinary.</p>
+        <p>Outside, Manhattan was past ten o&#8217;clock and fully operational.</p>
+        <p>The building key fob reader on the front door downstairs was going to start flashing green for other people soon. Gorski would arrive first, the way he always did, without announcement, sitting down at his machine and picking up wherever he had been. Then Voss. Then the ordinary pressure of a morning that had become something other than ordinary.</p>
         <p>And then, at two, the meeting they could not cancel.</p>
         <p>&#8220;We go to the meeting,&#8221; he said.</p>
         <p>&#8220;We go to the meeting.&#8221;</p>
@@ -324,7 +325,8 @@
         <p>It had always been the difference between what you knew and what you said. She had always been better at the first than the second. That was the thing about sitting with something: eventually you ran out of room to sit with it.</p>
         <p>But not this morning.</p>
         <p>Not yet.</p>
-        <p>The pharmacy on the walk downtown. The handwritten sign. System issues. She let it go.</p>
+        <p>The pharmacy on the walk downtown. The handwritten sign. System issues.</p>
+        <p>She let it go.</p>
         <p>&#8220;Walk me through trial four again,&#8221; she said.</p>
         <p>He walked her through trial four.</p>
         <p>The server room hummed.</p>
