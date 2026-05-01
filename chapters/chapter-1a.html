@@ -14,55 +14,53 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
-    <a href="../index.html" class="header-home">&#8592; <span>Proof of Life</span></a>
-    <nav class="header-chapter-nav" aria-label="Adjacent chapters">
-      <a href="chapter-1.html">&#8592; Chapter One</a>
-      <a href="chapter-2.html">Chapter Two &#8594;</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-drawer">
-      <span class="hamburger-icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
+    <a href="../index.html" class="header-home">
+      <span>PROOF_OF_LIFE</span>
+      <span class="header-scope">/ CH.01A</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle index" aria-expanded="false" aria-controls="nav-drawer">
+      <span class="nav-toggle-label" aria-hidden="true"></span>
+      <span class="nav-toggle-bracket" aria-hidden="true"></span>
     </button>
   </header>
 
   <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
 
   <nav class="nav-drawer" id="nav-drawer" aria-label="Site navigation" aria-hidden="true">
-    <div class="nav-drawer-header">
-      <button class="nav-close" aria-label="Close navigation">&#215;</button>
-    </div>
     <ul class="drawer-nav-list">
+      <li class="drawer-nav-item">
+        <a href="../overview.html">
+          <span class="ch-num">—</span>
+          <span class="ch-title">Overview</span>
+          <span class="ch-status is-open">OPEN</span>
+        </a>
+      </li>
       <li class="drawer-nav-item">
         <a href="chapter-1.html">
           <span class="ch-num">01</span>
           <span class="ch-title">Chapter One</span>
+          <span class="ch-status is-read">READ</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-1a.html" class="current">
           <span class="ch-num">01A</span>
           <span class="ch-title">Chapter 1A</span>
+          <span class="ch-status is-read">CURRENT</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-2.html">
           <span class="ch-num">02</span>
           <span class="ch-title">Chapter Two</span>
+          <span class="ch-status is-unread">UNREAD</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-3.html">
           <span class="ch-num">03</span>
           <span class="ch-title">Chapter Three</span>
-        </a>
-      </li>
-      <li class="drawer-nav-item">
-        <a href="../overview.html">
-          <span class="ch-num"></span>
-          <span class="ch-title">Overview</span>
+          <span class="ch-status is-unread">UNREAD</span>
         </a>
       </li>
     </ul>
@@ -71,13 +69,24 @@
   <main id="main">
     <div class="page-main">
 
-      <div class="chapter-title-block">
-        <p class="chapter-num">Chapter 1A</p>
-        <div class="chapter-rule" aria-hidden="true"></div>
-      </div>
+      <header class="chapter-slug" aria-label="Chapter metadata">
+        <div class="slug-row">
+          <span class="slug-key">CH.</span>
+          <span class="slug-val">01A</span>
+        </div>
+        <div class="slug-row">
+          <span class="slug-key">LOC.</span>
+          <span class="slug-val">Croton-on-Hudson, NY</span>
+        </div>
+        <div class="slug-row">
+          <span class="slug-key">TIME</span>
+          <span class="slug-val">09:08 EST</span>
+        </div>
+        <div class="slug-rule" aria-hidden="true"></div>
+      </header>
 
       <article class="chapter-body">
-        <p>At 9:08AM the executive director prepared the branch for a 9:30AM opening the way she had opened it for nine years.</p>
+        <p class="first-graf"><span class="lift">At 9:08AM the executive director</span> prepared the branch for a 9:30AM opening the way she had opened it for nine years.</p>
         <p>Key in the lock. Lights. The furnace clicking on in the ceiling above the lobby.</p>
         <p>The Hudson River Community Federal Credit Union. Croton-on-Hudson.</p>
         <p>Twelve hundred square feet between a hardware store and a pizza place. One branch. Six employees. 4,200 members. A brass plaque by the door that said <em>Chartered 1974</em>.</p>
@@ -122,6 +131,20 @@
 
     </div>
   </main>
+
+  <footer class="log-footer" role="contentinfo">
+    <div class="log-footer-row">
+      <span class="led" aria-hidden="true"></span>
+      <span>SYS::ARC.READER</span>
+      <span style="flex:1"></span>
+      <span>CH.01A</span>
+    </div>
+    <div class="log-footer-row">
+      <span>UPLINK</span>
+      <span class="dots" aria-hidden="true">&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;</span>
+      <span class="ok">OK</span>
+    </div>
+  </footer>
 
   <script src="../js/main.js"></script>
 </body>

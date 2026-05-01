@@ -13,15 +13,17 @@
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- Fixed top nav -->
+  <!-- Console header strip -->
   <header class="landing-header" role="banner">
-    <span class="landing-logo">PROOF OF LIFE</span>
+    <span class="landing-logo">PROOF_OF_LIFE</span>
     <button class="contents-btn" aria-expanded="false" aria-controls="contents-dropdown" aria-haspopup="true">
-      CONTENTS <span class="contents-arrow" aria-hidden="true">&#9662;</span>
+      <span class="contents-label" aria-hidden="true"></span>
+      <span class="contents-bracket" aria-hidden="true"></span>
+      <span class="sr-only">Contents</span>
     </button>
   </header>
 
-  <!-- Dropdown menu -->
+  <!-- Directory dropdown -->
   <div class="contents-dropdown" id="contents-dropdown" aria-hidden="true">
     <nav aria-label="Contents">
       <ul class="dropdown-list">
@@ -29,30 +31,35 @@
           <a href="overview.html">
             <span class="ch-num">—</span>
             <span class="ch-title">Overview</span>
+            <span class="ch-status is-open">OPEN</span>
           </a>
         </li>
         <li class="dropdown-item">
           <a href="chapters/chapter-1.html">
             <span class="ch-num">01</span>
             <span class="ch-title">Chapter One</span>
+            <span class="ch-status is-read">READ</span>
           </a>
         </li>
         <li class="dropdown-item">
           <a href="chapters/chapter-1a.html">
             <span class="ch-num">01A</span>
             <span class="ch-title">Chapter 1A</span>
+            <span class="ch-status is-read">READ</span>
           </a>
         </li>
         <li class="dropdown-item">
           <a href="chapters/chapter-2.html">
             <span class="ch-num">02</span>
             <span class="ch-title">Chapter Two</span>
+            <span class="ch-status is-read">READ</span>
           </a>
         </li>
         <li class="dropdown-item">
           <a href="chapters/chapter-3.html">
             <span class="ch-num">03</span>
             <span class="ch-title">Chapter Three</span>
+            <span class="ch-status is-unread">UNREAD</span>
           </a>
         </li>
       </ul>
@@ -115,8 +122,18 @@
     </section>
   </main>
 
-  <footer class="site-footer-landing">
-    <p>&copy; 2026 BMAC</p>
+  <footer class="log-footer" role="contentinfo">
+    <div class="log-footer-row">
+      <span class="led" aria-hidden="true"></span>
+      <span>SYS::ARC.READER</span>
+      <span style="flex:1"></span>
+      <span>v0.1</span>
+    </div>
+    <div class="log-footer-row">
+      <span>UPLINK</span>
+      <span class="dots" aria-hidden="true">&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;</span>
+      <span class="ok">OK</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

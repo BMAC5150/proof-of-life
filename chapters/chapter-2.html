@@ -14,55 +14,53 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
-    <a href="../index.html" class="header-home">&#8592; <span>Proof of Life</span></a>
-    <nav class="header-chapter-nav" aria-label="Adjacent chapters">
-      <a href="chapter-1a.html">&#8592; Chapter 1A</a>
-      <a href="chapter-3.html">Chapter Three &#8594;</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-drawer">
-      <span class="hamburger-icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
+    <a href="../index.html" class="header-home">
+      <span>PROOF_OF_LIFE</span>
+      <span class="header-scope">/ CH.02</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle index" aria-expanded="false" aria-controls="nav-drawer">
+      <span class="nav-toggle-label" aria-hidden="true"></span>
+      <span class="nav-toggle-bracket" aria-hidden="true"></span>
     </button>
   </header>
 
   <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
 
   <nav class="nav-drawer" id="nav-drawer" aria-label="Site navigation" aria-hidden="true">
-    <div class="nav-drawer-header">
-      <button class="nav-close" aria-label="Close navigation">&#215;</button>
-    </div>
     <ul class="drawer-nav-list">
+      <li class="drawer-nav-item">
+        <a href="../overview.html">
+          <span class="ch-num">—</span>
+          <span class="ch-title">Overview</span>
+          <span class="ch-status is-open">OPEN</span>
+        </a>
+      </li>
       <li class="drawer-nav-item">
         <a href="chapter-1.html">
           <span class="ch-num">01</span>
           <span class="ch-title">Chapter One</span>
+          <span class="ch-status is-read">READ</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-1a.html">
           <span class="ch-num">01A</span>
           <span class="ch-title">Chapter 1A</span>
+          <span class="ch-status is-read">READ</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-2.html" class="current">
           <span class="ch-num">02</span>
           <span class="ch-title">Chapter Two</span>
+          <span class="ch-status is-read">CURRENT</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-3.html">
           <span class="ch-num">03</span>
           <span class="ch-title">Chapter Three</span>
-        </a>
-      </li>
-      <li class="drawer-nav-item">
-        <a href="../overview.html">
-          <span class="ch-num"></span>
-          <span class="ch-title">Overview</span>
+          <span class="ch-status is-unread">UNREAD</span>
         </a>
       </li>
     </ul>
@@ -71,13 +69,24 @@
   <main id="main">
     <div class="page-main">
 
-      <div class="chapter-title-block">
-        <p class="chapter-num">Chapter Two</p>
-        <div class="chapter-rule" aria-hidden="true"></div>
-      </div>
+      <header class="chapter-slug" aria-label="Chapter metadata">
+        <div class="slug-row">
+          <span class="slug-key">CH.</span>
+          <span class="slug-val">02</span>
+        </div>
+        <div class="slug-row">
+          <span class="slug-key">LOC.</span>
+          <span class="slug-val">Mott Street, Chinatown, NYC</span>
+        </div>
+        <div class="slug-row">
+          <span class="slug-key">TIME</span>
+          <span class="slug-val">09:30 EST</span>
+        </div>
+        <div class="slug-rule" aria-hidden="true"></div>
+      </header>
 
       <article class="chapter-body">
-        <p>The building heating system groaned.</p>
+        <p class="first-graf"><span class="lift">The building heating system groaned.</span></p>
         <p>Even with headphones on Walker could hear it trying to bring minimal life support to a Chinatown building with questionable insulation on a cold damp Manhattan January morning.</p>
         <p>She tossed her cold cup of coffee into a trash can that had not been emptied since the Holidays and pulled-up her schedule for the day.</p>
         <p>She looked towards a wall of mounted whiteboards and multi-colored dry pen hieroglyphics. Flowcharts. Client scoreboards. Network uptime and record rationalization metrics.</p>
@@ -338,6 +347,20 @@
 
     </div>
   </main>
+
+  <footer class="log-footer" role="contentinfo">
+    <div class="log-footer-row">
+      <span class="led" aria-hidden="true"></span>
+      <span>SYS::ARC.READER</span>
+      <span style="flex:1"></span>
+      <span>CH.02</span>
+    </div>
+    <div class="log-footer-row">
+      <span>UPLINK</span>
+      <span class="dots" aria-hidden="true">&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;</span>
+      <span class="ok">OK</span>
+    </div>
+  </footer>
 
   <script src="../js/main.js"></script>
 </body>

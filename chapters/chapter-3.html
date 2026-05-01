@@ -14,55 +14,53 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
-    <a href="../index.html" class="header-home">&#8592; <span>Proof of Life</span></a>
-    <nav class="header-chapter-nav" aria-label="Adjacent chapters">
-      <a href="chapter-2.html">&#8592; Chapter Two</a>
-      <a href="../overview.html">Overview &#8594;</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-drawer">
-      <span class="hamburger-icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
+    <a href="../index.html" class="header-home">
+      <span>PROOF_OF_LIFE</span>
+      <span class="header-scope">/ CH.03</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle index" aria-expanded="false" aria-controls="nav-drawer">
+      <span class="nav-toggle-label" aria-hidden="true"></span>
+      <span class="nav-toggle-bracket" aria-hidden="true"></span>
     </button>
   </header>
 
   <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
 
   <nav class="nav-drawer" id="nav-drawer" aria-label="Site navigation" aria-hidden="true">
-    <div class="nav-drawer-header">
-      <button class="nav-close" aria-label="Close navigation">&#215;</button>
-    </div>
     <ul class="drawer-nav-list">
+      <li class="drawer-nav-item">
+        <a href="../overview.html">
+          <span class="ch-num">—</span>
+          <span class="ch-title">Overview</span>
+          <span class="ch-status is-open">OPEN</span>
+        </a>
+      </li>
       <li class="drawer-nav-item">
         <a href="chapter-1.html">
           <span class="ch-num">01</span>
           <span class="ch-title">Chapter One</span>
+          <span class="ch-status is-read">READ</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-1a.html">
           <span class="ch-num">01A</span>
           <span class="ch-title">Chapter 1A</span>
+          <span class="ch-status is-read">READ</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-2.html">
           <span class="ch-num">02</span>
           <span class="ch-title">Chapter Two</span>
+          <span class="ch-status is-read">READ</span>
         </a>
       </li>
       <li class="drawer-nav-item">
         <a href="chapter-3.html" class="current">
           <span class="ch-num">03</span>
           <span class="ch-title">Chapter Three</span>
-        </a>
-      </li>
-      <li class="drawer-nav-item">
-        <a href="../overview.html">
-          <span class="ch-num"></span>
-          <span class="ch-title">Overview</span>
+          <span class="ch-status is-read">CURRENT</span>
         </a>
       </li>
     </ul>
@@ -71,13 +69,24 @@
   <main id="main">
     <div class="page-main">
 
-      <div class="chapter-title-block">
-        <p class="chapter-num">Chapter Three</p>
-        <div class="chapter-rule" aria-hidden="true"></div>
-      </div>
+      <header class="chapter-slug" aria-label="Chapter metadata">
+        <div class="slug-row">
+          <span class="slug-key">CH.</span>
+          <span class="slug-val">03</span>
+        </div>
+        <div class="slug-row">
+          <span class="slug-key">LOC.</span>
+          <span class="slug-val">Karim Khan, Tehran, Iran</span>
+        </div>
+        <div class="slug-row">
+          <span class="slug-key">TIME</span>
+          <span class="slug-val">Pre-Dawn</span>
+        </div>
+        <div class="slug-rule" aria-hidden="true"></div>
+      </header>
 
       <article class="chapter-body">
-        <p>It was still dark when he crossed Karim Khan, though the darkness had thinned enough for the city to begin showing its injuries.</p>
+        <p class="first-graf"><span class="lift">It was still dark when he crossed Karim Khan,</span> though the darkness had thinned enough for the city to begin showing its injuries.</p>
         <p>Tehran after a night like that did not look conquered. It looked used.</p>
         <p>Beaten down and still moving. As if violence here had become less an event than a weather pattern. Something that rolled through, did its damage, then lingered in the air long after the noise was gone.</p>
         <p>The young man walked fast with his backpack slung over one shoulder and one hand in the pocket of his jacket.</p>
@@ -171,6 +180,20 @@
 
     </div>
   </main>
+
+  <footer class="log-footer" role="contentinfo">
+    <div class="log-footer-row">
+      <span class="led" aria-hidden="true"></span>
+      <span>SYS::ARC.READER</span>
+      <span style="flex:1"></span>
+      <span>CH.03</span>
+    </div>
+    <div class="log-footer-row">
+      <span>UPLINK</span>
+      <span class="dots" aria-hidden="true">&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;</span>
+      <span class="ok">OK</span>
+    </div>
+  </footer>
 
   <script src="../js/main.js"></script>
 </body>
