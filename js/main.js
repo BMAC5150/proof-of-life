@@ -57,9 +57,7 @@
     toggle.focus()
   }
 
-  toggle.addEventListener('click', function () {
-    drawer.classList.contains('is-open') ? closeDrawer() : openDrawer()
-  })
+  toggle.addEventListener('click', openDrawer)
   if (closeBtn) closeBtn.addEventListener('click', closeDrawer)
   if (overlay) overlay.addEventListener('click', closeDrawer)
   document.addEventListener('keydown', function (e) {

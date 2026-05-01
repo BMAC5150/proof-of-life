@@ -1,38 +1,11 @@
-# Proof of Life — Advance Review Copy
+# Proof of Life — Review Site
 
-A static review site for the novel *Proof of Life*. Pure HTML/CSS/JS, no build step.
+Private advance review site for *Proof of Life*, a geopolitical techno-thriller.
 
-## Structure
+This site hosts read-only chapter previews for invited reviewers. It is not a public-facing site.
 
-```
-.
-├── index.html               # Landing (cover + directory)
-├── overview.html            # Premise / reviewer notes
-├── chapters/
-│   ├── chapter-1.html       # Hell's Kitchen, NYC · 07:40 EST
-│   ├── chapter-1a.html      # Croton-on-Hudson, NY · 09:08 EST
-│   └── chapter-2.html       # Mott Street, Chinatown, NYC · 09:30 EST
-├── css/
-│   └── style.css            # All styles (V1 console aesthetic)
-└── js/
-    └── main.js              # Index dropdown + chapter drawer toggle
-```
+**Not for distribution. Not indexed by search engines.**
 
-## Local preview
+---
 
-Just open `index.html` in a browser, or serve the directory with any static server:
-
-```sh
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
-## Design system (V1 — console / lined ledger)
-
-- **Header strip** — 40px tall, green LED + `PROOF_OF_LIFE / SCOPE` mono label, `INDEX [+] / CLOSE [×]` toggle.
-- **Directory dropdown** — full-width listing with status pills: READ / UNREAD / OPEN / CURRENT.
-- **Chapter slug** — case-file metadata (CH., LOC., TIME) above the body.
-- **Lifted opening** — wrap the first clause of each chapter in `<span class="lift">…</span>`.
-- **Log-line footer** — `SYS::ARC.READER … vN.N` and `UPLINK ……… OK` on every page.
-
-Fonts via Google Fonts: Inter Tight, JetBrains Mono, Source Serif 4.
+Deployed via GitHub Pages. To add a chapter, create a new file in `chapters/` following the existing template and add a link row to `index.html` and the nav drawer in each page.
