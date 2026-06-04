@@ -88,7 +88,7 @@ a { color:inherit; text-decoration:none; }
   box-shadow:0 0 6px rgba(75,227,107,.7);
 }
 .landing-logo::after {
-  content:"/ INDEX";
+  content:"/ IDENTITY";
   color:var(--ink-faint);
   font-weight:400;
 }
