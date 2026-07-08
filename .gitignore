@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Local editor / assistant config
+.claude/
+
+# Source manuscript drafts (kept local, not published)
+Project Documents/
+
+# Build artifacts
+_dist/
