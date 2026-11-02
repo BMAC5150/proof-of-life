@@ -36,6 +36,17 @@ CHAPTERS = [
     }),
     ('09', 'Nine', 'PoL_Chapter_09.md', 'Fort Meade, Maryland', '06:18 EST', {}),
     ('10', 'Ten', 'PoL_Chapter_10.md', 'Tehran, Iran', 'Morning IRST', {}),
+    ('11', 'Eleven', 'PoL_Chapter_11.md', 'Mott Street, NYC', '07:37 EST', {
+        'Chapter Eleven-A': 'Bushwick, NYC · Saturday Afternoon EST',
+    }),
+    ('12', 'Twelve', 'PoL_Chapter_12.md', 'Mott Street, NYC', 'Pre-Dawn EST', {}),
+    ('13', 'Thirteen', 'PoL_Chapter_13.md', "Hell's Kitchen, NYC", '06:50 EST', {
+        'Chapter Thirteen-A': 'Fort Meade, Maryland · Tuesday 06:14 EST',
+    }),
+    ('14', 'Fourteen', 'PoL_Chapter_14.md', 'Greenwich, Connecticut', 'Night EST', {
+        'Chapter Fourteen-A': '902 Broadway Hotel, NYC · Early Morning EST',
+    }),
+    ('15', 'Fifteen', 'PoL_Chapter_15.md', '902 Broadway, NYC', 'Morning EST', {}),
 ]
 
 # All chapters for drawer nav (num, word_title). Includes chapters 1-3 that already exist.
@@ -50,6 +61,11 @@ ALL_CHAPTERS = [
     ('08', 'Eight'),
     ('09', 'Nine'),
     ('10', 'Ten'),
+    ('11', 'Eleven'),
+    ('12', 'Twelve'),
+    ('13', 'Thirteen'),
+    ('14', 'Fourteen'),
+    ('15', 'Fifteen'),
 ]
 
 SCENE_BREAK_HTML = '<div class="scene-break" role="separator" aria-label="Scene break">· · ·</div>'
