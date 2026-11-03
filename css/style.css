@@ -583,3 +583,64 @@ a { color:inherit; text-decoration:none; }
   .chapter-body { font-size:20px; }
   .chapter-body .first-graf .lift { font-size:28px; }
 }
+
+/* ---- Character profiles (dossier records) ---- */
+.profiles-intro {
+  margin-top:32px;
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+}
+.profile { padding:48px 0 8px; border-bottom:1px solid var(--ink-hair); }
+.profile:last-of-type { border-bottom:none; }
+.profile-head { display:flex; flex-direction:column; gap:24px; }
+.profile-photo { margin:0; }
+.profile-photo img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border:1px solid var(--ink-hair);
+  padding:6px;
+  background:var(--paper-alt);
+}
+.profile-photo figcaption {
+  margin-top:8px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:1.5px;
+  color:var(--ink-faint);
+}
+.profile-record { display:flex; flex-direction:column; gap:6px; }
+.profile-name {
+  font-family:var(--font-display);
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:-.5px;
+  line-height:1.1;
+  color:var(--ink);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.profile-record .slug-row { grid-template-columns:64px 1fr; }
+.profile-record .slug-val a { border-bottom:1px solid var(--ink-faint); transition:color .2s, border-color .2s; }
+.profile-record .slug-val a:hover { color:var(--green); border-color:var(--green); }
+.profile-status { color:var(--green); display:inline-flex; align-items:center; gap:8px; }
+.profile-status::before {
+  content:"";
+  width:6px; height:6px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 6px rgba(75,227,107,.7);
+}
+.profile-bio { margin-top:28px; }
+
+@media (min-width:768px) {
+  .profile-head { flex-direction:row; align-items:flex-start; gap:32px; }
+  .profile-photo { flex:0 0 260px; }
+  .profile-record { padding-top:4px; }
+  .profile-name { font-size:32px; }
+}

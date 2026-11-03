@@ -214,6 +214,8 @@ def build_drawer(current_num, from_chapters_dir=True):
         lines.append(f'      <li class="drawer-nav-item"><a href="{overview_href}" class="current"><span class="ch-num">&#8212;</span><span class="ch-title">Overview</span><span class="ch-status is-open">CURRENT</span></a></li>')
     else:
         lines.append(f'      <li class="drawer-nav-item"><a href="{overview_href}"><span class="ch-num">&#8212;</span><span class="ch-title">Overview</span><span class="ch-status is-open">OPEN</span></a></li>')
+    characters_href = '../characters.html' if from_chapters_dir else 'characters.html'
+    lines.append(f'      <li class="drawer-nav-item"><a href="{characters_href}"><span class="ch-num">&#8212;</span><span class="ch-title">Character Profiles</span><span class="ch-status is-open">OPEN</span></a></li>')
     for num, word in ALL_CHAPTERS:
         href = f'{prefix}chapter-{int(num)}.html'
         if num == current_num:
