@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build chapter HTML files for Proof of Life from Project Documents MDs.
+"""Build chapter HTML files for Source of Truth from Project Documents MDs.
 
 Reads Project Documents/PoL_Chapter_NN.md and writes chapters/chapter-N.html
 for each chapter listed in the CHAPTERS table below.
@@ -253,7 +253,7 @@ def build_chapter_html(num, word, md_file, loc, time, subheads_map):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Chapter {word} &#8212; Proof of Life</title>
+  <title>Chapter {word} &#8212; Source of Truth</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -264,7 +264,7 @@ def build_chapter_html(num, word, md_file, loc, time, subheads_map):
 
   <header class="site-header" role="banner">
     <a href="../index.html" class="header-home">
-      <span>PROOF_OF_LIFE</span>
+      <span>SOURCE_OF_TRUTH</span>
       <span class="header-scope">/ CH.{num}</span>
     </a>
     <button class="nav-toggle" aria-label="Toggle index" aria-expanded="false" aria-controls="nav-drawer">

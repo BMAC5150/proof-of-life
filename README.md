@@ -1,6 +1,6 @@
-# Proof of Life — Review Site
+# Source of Truth — Review Site
 
-Private advance review site for *Proof of Life*, a geopolitical techno-thriller.
+Private advance review site for *Source of Truth*, a geopolitical techno-thriller.
 
 This site hosts read-only chapter previews for invited reviewers. It is not a public-facing site.
 
